@@ -25,13 +25,7 @@ const frag = /*GLSL*/`
 
     vec2 coord = vTexCoord;
     
-    // soluce
-    // float ratio = 256./512.;
-    // coord = vTexCoord * vec2(1./ratio, 1.);
-    
     vec3 color = texture2D(tTex, coord).rgb;
-
-    // color += vec3(coord, 0.);
 
     gl_FragColor = vec4(color, 1.);
   }

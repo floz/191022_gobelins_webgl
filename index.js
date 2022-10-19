@@ -61,7 +61,7 @@ const loadTexture = () => {
     onFrame()
 
   }
-  img.src = require( './mimi_256-512.jpg' )
+  img.src = './mimi_256-512.jpg'
 }
 
 const setupCanvas = () => {
